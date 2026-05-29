@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COOLSEE ティザーLP 3案比較</title>
+  <meta name="description" content="COOLSEE保冷バッグのティザーLP 3案比較メニュー。" />
+  <meta name="theme-color" content="#f5fbff" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      min-height: 100%;
+      background: #f5fbff;
+    }
+
+    body {
+      min-height: 100vh;
+      color: #102033;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+      background:
+        radial-gradient(circle at 50% -160px, rgba(0, 159, 232, .18), transparent 360px),
+        linear-gradient(180deg, #f8fdff 0%, #ffffff 52%, #edf9ff 100%);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { display: block; width: 100%; }
+    a { color: inherit; text-decoration: none; }
+
+    .page {
+      width: min(100%, 980px);
+      margin: 0 auto;
+      padding: 34px 18px 46px;
+    }
+
+    .hero {
+      display: grid;
+      gap: 22px;
+      align-items: end;
+      padding-bottom: 28px;
+      border-bottom: 1px solid rgba(0, 159, 232, .2);
+    }
+
+    .brand {
+      color: #07334f;
+      font-size: 15px;
+      font-weight: 950;
+      letter-spacing: .22em;
+    }
+
+    h1 {
+      margin-top: 12px;
+      font-size: clamp(34px, 7vw, 64px);
+      font-weight: 950;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      margin-top: 16px;
+      max-width: 660px;
+      color: #526a78;
+      font-size: 15px;
+      font-weight: 800;
+      line-height: 1.9;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      margin-top: 18px;
+      padding: 0 12px;
+      border: 1px solid rgba(0, 159, 232, .24);
+      background: rgba(255, 255, 255, .82);
+      color: #07334f;
+      font-size: 12px;
+      font-weight: 950;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 26px;
+    }
+
+    .card {
+      min-height: 100%;
+      overflow: hidden;
+      border: 1px solid rgba(0, 159, 232, .18);
+      border-radius: 8px;
+      background: #ffffff;
+      box-shadow: 0 18px 38px rgba(44, 104, 132, .1);
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(0, 159, 232, .38);
+      box-shadow: 0 22px 48px rgba(44, 104, 132, .16);
+    }
+
+    .thumb {
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      background: #e9f8ff;
+    }
+
+    .thumb img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .body {
+      padding: 18px 16px 20px;
+    }
+
+    .tag {
+      display: inline-flex;
+      min-height: 24px;
+      align-items: center;
+      padding: 0 8px;
+      background: #edf9ff;
+      color: #0077b6;
+      font-size: 11px;
+      font-weight: 950;
+      letter-spacing: .08em;
+    }
+
+    .card h2 {
+      margin-top: 13px;
+      font-size: 21px;
+      font-weight: 950;
+      line-height: 1.45;
+    }
+
+    .card p {
+      margin-top: 10px;
+      color: #526a78;
+      font-size: 13px;
+      font-weight: 760;
+      line-height: 1.75;
+    }
+
+    .open {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 16px;
+      color: #07334f;
+      font-size: 13px;
+      font-weight: 950;
+    }
+
+    .open span {
+      display: inline-grid;
+      place-items: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      background: #009fe8;
+      color: #fff;
+    }
+
+    .card.ice .tag { background: #e8f8ff; color: #006eb8; }
+    .card.ice .open span { background: #007dd6; }
+    .card.line .tag { background: #ebfff3; color: #079944; }
+    .card.line .open span { background: #06c755; }
+
+    .note {
+      margin-top: 24px;
+      color: #708895;
+      font-size: 12px;
+      font-weight: 760;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 760px) {
+      .page { padding-top: 26px; }
+      .grid { grid-template-columns: 1fr; }
+      .hero { padding-bottom: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div>
+        <p class="brand">COOLSEE</p>
+        <h1>ティザーLP<br />3案比較</h1>
+        <p class="lead">白ベースの清潔感案、氷・保冷力強調案、LINE登録・クーポン訴求案を同じ素材で比較できます。</p>
+        <p class="status">2026年6月中旬 Makuake 先行販売予定</p>
+      </div>
+    </section>
+
+    <section class="grid" aria-label="ティザーLP案一覧">
+      <a class="card" href="teaser-lp-01-clean.html">
+        <div class="thumb"><img src="img/hero-kv.png" alt="COOLSEEの白ベース清潔感案" /></div>
+        <div class="body">
+          <span class="tag">PLAN 01</span>
+          <h2>白ベース<br />清潔感案</h2>
+          <p>生活感を抑えた明るい印象。商品写真と白い佇まいを中心に、毎日の買い物にもなじむ見せ方です。</p>
+          <div class="open">この案を見る <span>→</span></div>
+        </div>
+      </a>
+
+      <a class="card ice" href="teaser-lp-02-ice.html">
+        <div class="thumb"><img src="img/scene-water.png" alt="COOLSEEの氷と保冷力強調案" /></div>
+        <div class="body">
+          <span class="tag">PLAN 02</span>
+          <h2>氷・保冷力<br />強調案</h2>
+          <p>「氷が12時間残る」を主役にした冷感強めの構成。夏場の不安を解消する訴求に寄せています。</p>
+          <div class="open">この案を見る <span>→</span></div>
+        </div>
+      </a>
+
+      <a class="card line" href="teaser-lp-03-line.html">
+        <div class="thumb"><img src="img/point-lineup-clean.png" alt="COOLSEEのLINE登録訴求案" /></div>
+        <div class="body">
+          <span class="tag">PLAN 03</span>
+          <h2>LINE登録<br />クーポン訴求案</h2>
+          <p>500円OFFクーポンと最大30%OFFを冒頭から訴求。登録動機を最優先にした導線です。</p>
+          <div class="open">この案を見る <span>→</span></div>
+        </div>
+      </a>
+    </section>
+
+    <p class="note">各案は単体ページとして共有できます。LINEリンクは現在ダミーURLのままです。</p>
+  </main>
+</body>
+</html>
