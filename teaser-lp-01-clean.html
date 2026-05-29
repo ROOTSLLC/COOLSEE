@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COOLSEE｜氷水を直接注げる保冷バッグ【Makuake先行販売】</title>
+  <meta name="description" content="白く清潔感のあるデザインで、氷水を直接注げる。大容量36L、超軽量667g、5層式タイベック製の保冷バッグCOOLSEE。" />
+  <meta name="theme-color" content="#f5fbff" />
+  <meta property="og:title" content="COOLSEE｜氷水を直接注げる保冷バッグ" />
+  <meta property="og:description" content="氷が12時間残る。大容量36L、超軽量667g、5層式タイベック製。" />
+  <meta property="og:image" content="img/og-image.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="preload" href="img/hero-kv.png" as="image" />
+  <link rel="preload" href="img/point-lineup-clean.png" as="image" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #ffffff;
+      --bg-2: #eef9ff;
+      --ink: #102033;
+      --soft: #526a78;
+      --muted: #708895;
+      --ice: #009fe8;
+      --ice-2: #12b8ff;
+      --line: rgba(0, 159, 232, .24);
+      --green: #06c755;
+      --gold: #efc976;
+    }
+
+    body.clean-lp {
+      background: #f8fcff;
+    }
+
+    .clean-lp .lp {
+      background:
+        radial-gradient(circle at 50% -130px, rgba(111, 207, 255, .18), transparent 320px),
+        linear-gradient(180deg, #fbfdff 0%, #ffffff 44%, #f1fbff 100%);
+    }
+
+    .clean-lp .hero-copy {
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, .92), #ffffff 72%),
+        radial-gradient(circle at 18% 0%, rgba(0, 172, 232, .1), transparent 230px);
+    }
+
+    .clean-lp .cta-panel,
+    .clean-lp .final-cta {
+      background: linear-gradient(180deg, #0b4a68 0%, #073047 100%);
+    }
+
+    .clean-lp .copy-block p {
+      color: #17354a;
+    }
+
+    html {
+      background: #f5fbff;
+      overflow-x: hidden;
+    }
+
+    body {
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+      background: #f5fbff;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      overflow-x: hidden;
+    }
+
+    img { display: block; width: 100%; max-width: 100%; }
+    a { color: inherit; }
+
+    .lp {
+      width: min(100%, 390px);
+      min-height: 100vh;
+      margin: 0 auto;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 50% -120px, rgba(0, 172, 232, .22), transparent 330px),
+        linear-gradient(180deg, #f5fbff 0%, #ffffff 48%, #eef9ff 100%);
+      box-shadow: 0 0 48px rgba(44, 104, 132, .16);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background: #ffffff;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-photo {
+      position: relative;
+      overflow: hidden;
+      background: #eef9ff;
+      border-bottom: 1px solid rgba(0, 159, 232, .2);
+    }
+
+    .hero-photo img {
+      aspect-ratio: 16 / 9;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+      filter: saturate(1.02) contrast(1.03) brightness(1);
+    }
+
+    .hero::before,
+    .hero::after {
+      content: none;
+      display: none;
+    }
+
+    .hero::before {
+      z-index: -2;
+      background:
+        linear-gradient(180deg, rgba(1, 7, 15, .2) 0%, rgba(1, 7, 15, .38) 34%, rgba(1, 7, 15, .9) 72%, #020814 100%),
+        radial-gradient(circle at 18% 14%, rgba(131, 216, 255, .18), transparent 210px);
+    }
+
+    .hero::after {
+      z-index: -1;
+      background-image:
+        linear-gradient(rgba(131, 216, 255, .08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(131, 216, 255, .06) 1px, transparent 1px);
+      background-size: 48px 48px;
+      opacity: .35;
+      mix-blend-mode: screen;
+    }
+
+    .hero-copy {
+      padding: 28px 20px 36px;
+      text-align: left;
+      background:
+        radial-gradient(circle at 18% 0%, rgba(0, 172, 232, .13), transparent 230px),
+        #ffffff;
+      color: var(--ink);
+    }
+
+    .brand-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+
+    .brand {
+      color: #07334f;
+      font-size: 22px;
+      font-weight: 950;
+      letter-spacing: .22em;
+      text-shadow: none;
+    }
+
+    .date-pill {
+      padding: 7px 9px;
+      border: 1px solid rgba(131, 216, 255, .5);
+      color: #07334f;
+      background: rgba(231, 248, 255, .9);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: .06em;
+      white-space: nowrap;
+      backdrop-filter: blur(8px);
+    }
+
+    .kicker {
+      color: var(--ice);
+      font-size: 13px;
+      font-weight: 950;
+      line-height: 1.7;
+      letter-spacing: .08em;
+    }
+
+    h1 {
+      margin-top: 12px;
+      font-size: 45px;
+      font-weight: 950;
+      line-height: 1.08;
+      letter-spacing: -.03em;
+      text-shadow: none;
+    }
+
+    h1 .ice {
+      display: block;
+      color: var(--ice);
+    }
+
+    .hero-lead {
+      margin-top: 18px;
+      color: #233847;
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 1.85;
+    }
+
+    .hero-lead b {
+      color: var(--ice);
+      font-size: 21px;
+      letter-spacing: .02em;
+    }
+
+    .cta-panel {
+      padding: 34px 20px 38px;
+      text-align: center;
+      color: #fff;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(43, 183, 255, .2), transparent 230px),
+        linear-gradient(180deg, #07334f 0%, #031b2e 100%);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .cta-eyebrow {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 950;
+      line-height: 1.7;
+    }
+
+    .cta-date {
+      margin-top: 20px;
+      color: #fff;
+      font-size: 22px;
+      font-weight: 950;
+      line-height: 1.4;
+    }
+
+    .discount {
+      margin-top: 8px;
+      color: #fff;
+      font-size: 19px;
+      font-weight: 950;
+      line-height: 1.35;
+    }
+
+    .discount strong {
+      color: var(--ice);
+      font-size: 54px;
+      font-weight: 950;
+      letter-spacing: .07em;
+      text-shadow: 0 0 24px rgba(34, 174, 250, .2);
+    }
+
+    .coupon {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 3px 6px;
+      color: #fff;
+      background: linear-gradient(90deg, rgba(34, 174, 250, .45), rgba(34, 174, 250, .2));
+      font-size: 19px;
+      font-weight: 950;
+      line-height: 1.25;
+    }
+
+    .line-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: min(100%, 252px);
+      min-height: 58px;
+      margin-top: 26px;
+      border-radius: 5px;
+      background: var(--green);
+      color: #fff;
+      font-size: 18px;
+      font-weight: 950;
+      text-decoration: none;
+      box-shadow: 0 16px 34px rgba(6, 199, 85, .28);
+    }
+
+    .line-btn svg {
+      width: 25px;
+      height: 25px;
+      flex: 0 0 auto;
+    }
+
+    .small-note {
+      margin-top: 14px;
+      color: rgba(255, 255, 255, .74);
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.8;
+    }
+
+    .copy-block {
+      padding: 48px 20px 42px;
+      text-align: center;
+      background: #ffffff;
+      border-bottom: 1px solid rgba(71, 194, 255, .28);
+    }
+
+    .copy-block p {
+      font-size: 23px;
+      font-weight: 950;
+      line-height: 1.75;
+      letter-spacing: .01em;
+    }
+
+    .copy-block .sub {
+      margin-top: 22px;
+      color: var(--ice);
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    .section-heading {
+      padding: 40px 20px 28px;
+      text-align: center;
+      background: #ffffff;
+    }
+
+    .section-heading .rule {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 12px;
+      color: #102033;
+      font-size: 28px;
+      font-weight: 950;
+      line-height: 1.25;
+    }
+
+    .section-heading .rule::before,
+    .section-heading .rule::after {
+      content: "";
+      height: 1px;
+      background: var(--line);
+    }
+
+    .section-heading small {
+      display: block;
+      margin-top: 8px;
+      color: var(--soft);
+      font-size: 14px;
+      font-weight: 850;
+      letter-spacing: .08em;
+    }
+
+    .feature {
+      background: #ffffff;
+      border-top: 1px solid rgba(71, 194, 255, .18);
+    }
+
+    .media {
+      position: relative;
+      background: #eef9ff;
+      overflow: hidden;
+    }
+
+    .media img {
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      filter: saturate(1.02) contrast(1.03) brightness(1);
+    }
+
+    .media.tall img {
+      aspect-ratio: 3 / 4;
+    }
+
+    .media.wide img {
+      aspect-ratio: 4 / 3;
+    }
+
+    .media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 58%, rgba(255, 255, 255, .12) 100%);
+      pointer-events: none;
+    }
+
+    .feature-body {
+      padding: 24px 20px 38px;
+    }
+
+    .num {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--ice);
+      font-size: 11px;
+      font-weight: 950;
+      letter-spacing: .18em;
+    }
+
+    .num::before {
+      content: "";
+      width: 36px;
+      height: 1px;
+      background: var(--ice);
+    }
+
+    .feature h2 {
+      margin-top: 13px;
+      font-size: 26px;
+      font-weight: 950;
+      line-height: 1.52;
+      letter-spacing: .01em;
+    }
+
+    .feature h2 strong {
+      color: var(--ice);
+      font-size: 33px;
+    }
+
+    .feature p {
+      margin-top: 15px;
+      color: var(--soft);
+      font-size: 14px;
+      font-weight: 780;
+      line-height: 1.95;
+      text-align: left;
+    }
+
+    .spec-band {
+      padding: 42px 18px;
+      text-align: center;
+      color: #102033;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(0, 172, 232, .16), transparent 230px),
+        #eef9ff;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .spec-band h2 {
+      font-size: 28px;
+      font-weight: 950;
+      line-height: 1.55;
+    }
+
+    .spec-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 7px;
+      margin-top: 24px;
+    }
+
+    .spec {
+      min-height: 104px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 12px 5px;
+      border: 1px solid rgba(131, 216, 255, .36);
+      background: rgba(255, 255, 255, .78);
+    }
+
+    .spec b {
+      color: var(--ice);
+      font-size: 25px;
+      font-weight: 950;
+      line-height: 1.12;
+      letter-spacing: -.02em;
+    }
+
+    .spec span {
+      margin-top: 9px;
+      color: #233847;
+      font-size: 10px;
+      font-weight: 900;
+      line-height: 1.5;
+    }
+
+    .closing {
+      padding: 52px 20px 34px;
+      text-align: center;
+      background: linear-gradient(180deg, #ffffff, #eef9ff);
+      border-top: 1px solid rgba(71, 194, 255, .25);
+    }
+
+    .closing h2 {
+      font-size: 27px;
+      font-weight: 950;
+      line-height: 1.65;
+    }
+
+    .closing p {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 850;
+      line-height: 1.95;
+    }
+
+    .final-cta {
+      padding: 36px 20px 42px;
+      text-align: center;
+      color: #fff;
+      background: linear-gradient(180deg, #07334f 0%, #031b2e 100%);
+      border-top: 1px solid var(--line);
+    }
+
+    .final-cta h2 {
+      font-size: 24px;
+      font-weight: 950;
+      line-height: 1.72;
+    }
+
+    .final-cta h2 strong {
+      color: var(--ice);
+      font-size: 40px;
+      letter-spacing: .04em;
+    }
+
+    .legal {
+      margin-top: 24px;
+      color: #8399a8;
+      font-size: 10px;
+      font-weight: 650;
+      line-height: 1.85;
+    }
+
+    .footer {
+      padding: 30px 20px 36px;
+      color: #708895;
+      background: #f5fbff;
+      text-align: center;
+      font-size: 10px;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 390px) {
+      .brand-row { margin-bottom: 20px; }
+      h1 { font-size: 42px; }
+      .discount strong { font-size: 50px; }
+      .copy-block p { font-size: 21px; }
+      .feature h2 { font-size: 24px; }
+      .feature h2 strong { font-size: 31px; }
+    }
+  </style>
+</head>
+<body class="clean-lp">
+  <main class="lp">
+    <section class="hero">
+      <div class="hero-photo">
+        <img src="img/hero-kv.png" alt="COOLSEEのキービジュアル" />
+      </div>
+      <div class="hero-copy">
+        <div class="brand-row">
+          <p class="brand">COOLSEE</p>
+          <p class="date-pill">2026年6月中旬 Makuake</p>
+        </div>
+        <p class="kicker">白く、軽く、しっかり冷やす。</p>
+        <h1>氷水を<br />直接注げる<br /><span class="ice">保冷バッグ</span></h1>
+        <p class="hero-lead"><b>清潔感のある白い佇まい。</b><br />36L大容量 × 667g超軽量。<br />5層式タイベック製。</p>
+      </div>
+    </section>
+
+    <section class="cta-panel">
+      <p class="cta-eyebrow">毎日の買い物にも、夏の外出にも。</p>
+      <p class="cta-date">6月中旬 Makuakeにて<br />先行販売予定</p>
+      <p class="discount">＼ 最大 <strong>30%OFF</strong> ／<br />+ LINEクーポン500円</p>
+      <a class="line-btn" href="https://lin.ee/XXXXXXX" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.15 2 11.26c0 4.608 3.705 8.468 8.72 9.14.34.073.8.224.917.514.105.264.069.677.034.944l-.148.877c-.046.264-.21 1.031.903.562 1.114-.47 6.006-3.538 8.192-6.059C21.557 15.104 22 13.236 22 11.26 22 6.15 17.523 2 12 2z"/></svg>
+        友だち追加
+      </a>
+      <p class="coupon">LINE登録者限定 500円OFFクーポン</p>
+      <p class="small-note">公開通知と限定クーポンを、LINEでお届けします。</p>
+    </section>
+
+    <section class="copy-block">
+      <p>生活感を抑えて、<br />冷たさはしっかり。</p>
+      <p class="sub">白いバッグに見えて、<br />中身は本格保冷仕様。</p>
+    </section>
+
+    <section class="feature">
+      <div class="media wide">
+        <img src="img/point-lineup-clean.png" alt="氷と並ぶCOOLSEEの保冷バッグ" />
+      </div>
+      <div class="feature-body">
+        <span class="num">POINT 01</span>
+        <h2>氷水をそのまま注げる、<br /><strong>清潔インナー。</strong></h2>
+        <p>飲み物を一気に冷やしたい時も、濡れたものを持ち帰りたい時も。内側に氷や水を直接入れられるので、使い勝手まで気持ちいい保冷バッグです。</p>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="media">
+        <img src="img/scene-water.png" alt="氷水に飲み物やスイカを入れたCOOLSEE" />
+      </div>
+      <div class="feature-body">
+        <span class="num">POINT 02</span>
+        <h2><strong>氷が12時間残る。</strong><br />冷たさを、長くキープ。</h2>
+        <p>室温30℃・氷500gの社内テストで、12時間後の溶け残りを確認。長時間の買い物、習い事の送迎、アウトドアでも冷たさが続きます。</p>
+      </div>
+    </section>
+
+    <section class="spec-band">
+      <h2>大容量なのに、<br />驚くほど身軽。</h2>
+      <div class="spec-grid">
+        <div class="spec"><b>36L</b><span>まとめ買いも<br />しっかり入る</span></div>
+        <div class="spec"><b>667g</b><span>毎日持てる<br />超軽量</span></div>
+        <div class="spec"><b>5層</b><span>冷気を逃がしにくい<br />断熱構造</span></div>
+      </div>
+    </section>
+
+    <section class="section-heading">
+      <div class="rule"><span>COOLSEE</span></div>
+      <small>4つのポイント</small>
+    </section>
+
+    <section class="feature">
+      <div class="media tall">
+        <img src="img/scene-shopping.png" alt="買い物で食材をたっぷり入れたCOOLSEE" />
+      </div>
+      <div class="feature-body">
+        <span class="num">POINT 03</span>
+        <h2>36Lの大容量。<br />白くすっきり持てる。</h2>
+        <p>牛乳、野菜、冷凍食品、2Lペットボトルまでまとめて収納。軽量だから、荷物が増える日も持ち運びやすい設計です。</p>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="media wide">
+        <img src="img/product-tyvek.png" alt="タイベック素材を使ったCOOLSEEのバッグ" />
+      </div>
+      <div class="feature-body">
+        <span class="num">POINT 04</span>
+        <h2>5層式タイベック製。<br />軽く、強く、水に強い。</h2>
+        <p>外装にはタイベック素材を採用。紙のような質感でありながら、耐久性・耐水性・軽量性に優れ、医療現場でも信頼される高機能素材です。</p>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="media wide">
+        <img src="img/spec-size.png" alt="COOLSEEのサイズ表記" />
+      </div>
+      <div class="feature-body">
+        <span class="num">SPEC</span>
+        <h2>折りたためるのに、<br />しっかり入る。</h2>
+        <p>使わない時はコンパクトに。必要な時だけ大容量の保冷バッグとして活躍します。日常にもレジャーにもなじむ、頼れる一枚です。</p>
+      </div>
+    </section>
+
+    <section class="closing">
+      <h2>清潔感も、保冷力も。<br />ひとつで。</h2>
+      <p>公開通知、早割リターン、500円クーポン。<br />先行案内はLINEから。</p>
+    </section>
+
+    <section class="final-cta">
+      <p class="cta-eyebrow">ここまで読んでくださった方へ</p>
+      <h2>最も条件の良いご案内を<br /><strong>LINEでお届け</strong></h2>
+      <p class="discount">＼ 最大 <strong>30%OFF</strong> ／<br />+ LINEクーポン500円</p>
+      <a class="line-btn" href="https://lin.ee/XXXXXXX" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.15 2 11.26c0 4.608 3.705 8.468 8.72 9.14.34.073.8.224.917.514.105.264.069.677.034.944l-.148.877c-.046.264-.21 1.031.903.562 1.114-.47 6.006-3.538 8.192-6.059C21.557 15.104 22 13.236 22 11.26 22 6.15 17.523 2 12 2z"/></svg>
+        友だち追加
+      </a>
+      <p class="legal">早割リターンは数量限定です。保冷力は社内テストによるもので、使用環境により異なります。仕様・販売予定日は変更になる場合があります。</p>
+    </section>
+
+    <footer class="footer">
+      © 2026 合同会社ROOTS
+    </footer>
+  </main>
+</body>
+</html>
